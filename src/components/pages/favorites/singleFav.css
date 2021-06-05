@@ -1,0 +1,35 @@
+.favBox {
+	background-color: white;
+	width: 32%;
+	padding: 10px;
+	border-radius: 4px;
+	align-items: center;
+	margin-bottom: 10px;
+	flex-direction: row !important;
+}
+
+.trashIcon {
+	cursor: pointer;
+	color: rgb(196, 0, 0);
+	z-index: 111;
+}
+
+@media (max-width: 991px) {
+	.favBox {
+		width: 49%;
+	}
+}
+
+@media (max-width: 767px) {
+	.favBox {
+		width: 70%;
+		margin: 10px auto;
+	}
+}
+
+@media (max-width: 567px) {
+	.favBox {
+		width: 100%;
+		margin: 10px auto;
+	}
+}

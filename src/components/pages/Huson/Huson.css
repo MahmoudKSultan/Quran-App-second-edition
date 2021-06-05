@@ -1,0 +1,51 @@
+.Huson {
+	padding-top: 100px;
+	font-family: "Almarai", sans-serif;
+}
+.azkarContent {
+	background-image: linear-gradient(
+			180deg,
+			rgba(51, 51, 51, 0.6),
+			rgba(51, 51, 51, 0.7)
+		),
+		url(./duaa.jpg);
+	background-position: bottom;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 50px;
+}
+.azkarContent .row {
+	margin-top: 30px;
+}
+.title h1 {
+	color: white;
+	border-bottom: 2px solid white;
+	width: 30%;
+	padding-bottom: 20px;
+	margin: auto;
+}
+.zkrBox {
+	border: 3px solid white;
+	background: transparent;
+	padding: 15px 20px;
+	border-radius: 5px;
+	margin: 20px;
+	color: white;
+	transition: 0.3s;
+}
+.zkrBox:hover {
+	color: black;
+	background-color: white;
+}
+.title {
+	margin: auto;
+	display: block;
+}
+
+.anc {
+	width: 23%;
+}
+
+.azkarContent {
+	justify-content: space-around !important;
+}

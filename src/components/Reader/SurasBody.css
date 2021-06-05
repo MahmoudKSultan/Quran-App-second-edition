@@ -1,0 +1,19 @@
+.suras {
+	padding-top: 100px;
+}
+.surasBody {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-radius: 20px 0;
+	width: 64%;
+}
+
+.readerName {
+	margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+	.surasBody {
+		width: 100%;
+	}
+}

@@ -1,0 +1,27 @@
+.zker {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	font-family: "Almarai", sans-serif;
+}
+.zekrBox {
+	background-color: white;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+	line-height: 2rem;
+}
+.zekrTitle h2 {
+	width: 30%;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid black;
+	display: flex;
+	justify-content: space-around;
+}
+
+.zekrTitle .playIcon {
+	display: flex;
+	align-items: center;
+}

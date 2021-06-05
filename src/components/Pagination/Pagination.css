@@ -1,0 +1,32 @@
+.pagination {
+	padding: 0 0 20px 0;
+	position: absolute;
+	bottom: -15%;
+	left: 50%;
+	transform: translate(-50%);
+}
+.cont {
+	margin: auto;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.pag {
+	margin: 5px;
+	border: 2px solid rgb(38, 211, 38);
+	padding: 3px 7px;
+	transition: 0.2s;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.pag:hover {
+	background-color: rgb(38, 211, 38);
+	color: white;
+}
+
+.pag.active {
+	background-color: rgb(38, 211, 38);
+	color: white;
+}

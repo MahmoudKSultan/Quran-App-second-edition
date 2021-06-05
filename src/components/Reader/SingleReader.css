@@ -1,0 +1,54 @@
+.singleReader {
+	width: 32%;
+	background-color: white;
+	margin-bottom: 20px;
+	padding: 20px;
+	transition: 0.3s;
+	cursor: pointer;
+	font-family: "Almarai", sans-serif;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.icon > * {
+	color: black;
+	z-index: 22;
+}
+.icon .heart {
+	z-index: 44;
+}
+
+.names {
+	text-align: right;
+}
+.singleReader:hover {
+	background-color: #4dc001;
+	color: white;
+}
+
+.singleReader:hover .icon > *,
+.singleReader:hover .box > * {
+	color: white;
+	transition: 0.3s;
+}
+@media (max-width: 576px) {
+	.singleReader {
+		width: 100% !important;
+	}
+}
+/* @media (max-width: 767px) {
+	.singleReader {
+		width: 100% !important;
+	}
+} */
+@media (max-width: 991px) {
+	.singleReader {
+		width: 49%;
+	}
+}

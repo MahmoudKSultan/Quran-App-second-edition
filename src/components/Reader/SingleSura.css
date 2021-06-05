@@ -1,0 +1,36 @@
+.singleSura {
+	width: 32%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	margin-bottom: 30px;
+	padding: 20px;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+
+.singleSura:hover {
+	background-color: #44aa00;
+	color: white;
+}
+
+.play {
+	cursor: pointer;
+}
+
+@media (max-width: 576px) {
+	.singleSura {
+		width: 100% !important;
+	}
+}
+/* @media (max-width: 767px) {
+	.singleReader {
+		width: 100% !important;
+	}
+} */
+@media (max-width: 991px) {
+	.singleSura {
+		width: 49%;
+	}
+}

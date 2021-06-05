@@ -1,0 +1,22 @@
+.favtitle {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.favtitle span {
+	width: 3px;
+	height: 30px;
+	background-color: rgb(103, 243, 103);
+	margin-left: 7px;
+}
+h4 {
+	color: white;
+}
+.single {
+	justify-content: space-between;
+	display: flex;
+}
+
+.favRow {
+	flex-direction: row !important;
+}

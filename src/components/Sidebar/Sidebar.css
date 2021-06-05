@@ -1,0 +1,59 @@
+.sidebar {
+	font-family: "Almarai", sans-serif;
+}
+.lastBox {
+	background-color: white;
+	padding: 10px;
+}
+
+img {
+	width: 100%;
+}
+
+.title {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.row {
+	justify-content: space-between;
+}
+
+.gr {
+	text-align: center;
+	border: 2px solid #44aa00;
+	padding: 10px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.fav:hover {
+	background-color: #44aa00;
+	color: white;
+}
+
+.favReader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.08);
+	/* box-shadow: 0 0 5px rgb(115, 238, 115); */
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+.favReader .info h3 {
+	opacity: 0.8;
+}
+.favReader .info h5 {
+	opacity: 0.6;
+}
+
+.icon {
+	color: rgb(255, 0, 0);
+	cursor: pointer;
+}
+@media (max-width: 767px) {
+	.row {
+		align-items: center;
+	}
+}
