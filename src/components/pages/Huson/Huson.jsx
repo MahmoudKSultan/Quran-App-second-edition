@@ -13,12 +13,9 @@ function Huson() {
 				setLoader(false);
 			});
 	}, []);
-	console.log(azkar);
 	return (
 		<div className="Huson">
-			<div className="container">
-				<AzkarBody azkar={azkar} loader={loader} />
-			</div>
+			<AzkarBody azkar={azkar} loader={loader} />
 		</div>
 	);
 }

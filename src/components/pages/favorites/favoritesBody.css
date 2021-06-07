@@ -18,5 +18,7 @@ h4 {
 }
 
 .favRow {
-	flex-direction: row !important;
+	/* flex-direction: row !important; */
+	justify-content: initial;
+	transition: 0.3;
 }

@@ -16,7 +16,6 @@ function Zekr({
 		fetch(`http://www.mp3quran.net/api/husn/ar/${id}.json`)
 			.then((res) => res.json())
 			.then((data) => {
-				console.log(data[Object.keys(data)]);
 				setLoader(false);
 				setAzkar(data[Object.keys(data)]);
 				setZekrName(Object.keys(data));

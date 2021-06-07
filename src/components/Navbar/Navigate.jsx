@@ -11,11 +11,9 @@ function Navigate() {
 				<li>
 					<NavLink to="/">الاذاعة</NavLink>
 				</li>
+
 				<li>
-					<NavLink to="/">تصفح القرآن</NavLink>
-				</li>
-				<li>
-					<NavLink to="/">التلاوات المرئية</NavLink>
+					<NavLink to="/qurantext">التلاوات المرئية</NavLink>
 				</li>
 				<li>
 					<NavLink to="/huson">حصن المسلم</NavLink>

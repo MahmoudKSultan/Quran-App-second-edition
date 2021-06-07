@@ -12,7 +12,14 @@
 	flex: 0.27;
 	padding: 20px;
 }
-
+.home input {
+	margin-bottom: 20px;
+}
+.background {
+	background-color: #f3e7e7;
+	padding: 20px;
+	border-radius: 6px;
+}
 @media (max-width: 991px) {
 	.right {
 		flex: 0.7;
@@ -21,9 +28,16 @@
 		flex: 0.3;
 	}
 }
-
+@media (max-width: 576px) {
+	.container {
+		width: 100% !important;
+	}
+	input {
+		margin-right: 0;
+	}
+}
 @media (max-width: 1140px) {
-	.row {
+	.home .row {
 		flex-direction: column-reverse;
 	}
 	.right,

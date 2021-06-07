@@ -1,0 +1,73 @@
+.quranText {
+	padding-top: 80px;
+	background-image: linear-gradient(
+			180deg,
+			rgba(51, 51, 51, 0.6),
+			rgba(51, 51, 51, 0.7)
+		),
+		url(./quran.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 100vh;
+}
+.quranText .container {
+	padding-top: 20px;
+}
+.swarBody {
+	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.swarBody .sura {
+	background-color: white;
+	width: 18%;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 5px;
+}
+.suraBox {
+	align-items: center;
+}
+.swarBody .sura h4 {
+	color: black;
+	text-align: center;
+}
+
+.quranText input,
+.quranText input::placeholder {
+	color: white;
+	border-color: white;
+}
+
+@media (max-width: 1250px) {
+	.swarBody .sura {
+		width: 22%;
+	}
+}
+
+@media (max-width: 991px) {
+	.swarBody .sura {
+		width: 30%;
+	}
+}
+
+@media (max-width: 778px) {
+	.swarBody {
+		padding-top: 10px;
+	}
+	.swarBody .sura {
+		width: 45%;
+	}
+}
+
+@media (max-width: 576px) {
+	.swarBody .sura {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.quranText input {
+		margin: auto;
+	}
+}

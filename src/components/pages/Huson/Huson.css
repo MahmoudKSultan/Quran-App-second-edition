@@ -1,7 +1,13 @@
 .Huson {
-	padding-top: 100px;
+	padding-top: 83px;
 	font-family: "Almarai", sans-serif;
 }
+.header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
 .azkarContent {
 	background-image: linear-gradient(
 			180deg,
@@ -12,40 +18,80 @@
 	background-position: bottom;
 	background-attachment: fixed;
 	background-size: cover;
-	padding: 50px;
+	padding: 50px 20px;
+	min-height: calc(100vh - 83px);
 }
 .azkarContent .row {
 	margin-top: 30px;
 }
-.title h1 {
+.header .input {
+	flex: 0.5;
+}
+.header input,
+.header input::placeholder {
 	color: white;
-	border-bottom: 2px solid white;
-	width: 30%;
-	padding-bottom: 20px;
-	margin: auto;
+}
+.hesnTitle h1 {
+	color: white;
 }
 .zkrBox {
 	border: 3px solid white;
 	background: transparent;
 	padding: 15px 20px;
+	margin: 0 13px;
+	margin-bottom: 15px;
 	border-radius: 5px;
-	margin: 20px;
 	color: white;
 	transition: 0.3s;
+	font-size: 18px;
 }
 .zkrBox:hover {
 	color: black;
 	background-color: white;
 }
-.title {
-	margin: auto;
-	display: block;
-}
 
+.Huson input {
+	border-bottom: 2px solid white;
+}
 .anc {
-	width: 23%;
+	width: 25%;
 }
 
 .azkarContent {
 	justify-content: space-around !important;
+}
+
+@media (max-width: 1140px) {
+	.anc {
+		width: 33%;
+		padding: 0 15px;
+	}
+}
+@media (max-width: 991px) {
+	.hesnTitle h1 {
+		font-size: 20px;
+	}
+	.anc {
+		width: 50%;
+		padding: 0 15px;
+	}
+}
+
+@media (max-width: 600px) {
+	.anc {
+		width: 100%;
+		padding: 0 15px;
+	}
+	.header {
+		flex-direction: column-reverse;
+	}
+	.hesnTitle h1 {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.header input {
+		margin-right: 0;
+		width: 90%;
+		margin: auto;
+	}
 }

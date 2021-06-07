@@ -18,7 +18,6 @@ function ReadersBody({
 					<SingleReader
 						key={reader.id}
 						reader={reader}
-						setReader={setReader}
 						onClick={() => setReader(reader.id)}
 						handleHeartClick={handleHeartClick}
 						history={history}

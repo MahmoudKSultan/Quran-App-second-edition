@@ -15,7 +15,9 @@ class Provider extends React.Component {
 		readerPerPage: 12,
 		paginatedReaders: [],
 		searchedReader: [],
-		search: "",
+		readerSearch: "",
+		zekrSearch: "",
+		suraSearchText: "",
 	};
 
 	componentDidMount = () => {
@@ -30,10 +32,10 @@ class Provider extends React.Component {
 			.then(() => this.setState({ readersLoader: false }));
 	};
 
-	handleInputChange = (event) => {
+	handleInputChange = (event, name) => {
 		// const { readers, search } = this.state;
 		let value = event.target.value;
-		this.setState({ search: value });
+		this.setState({ [name]: value });
 		// let searchedreaders = readers.filter((reader) => {
 		// 	if (search === "") return reader;
 		// 	else if (reader.name.includes(search)) return reader;
@@ -111,7 +113,6 @@ class Provider extends React.Component {
 			<context.Provider
 				value={{
 					...this.state,
-					setReader: this.setReader,
 					handlePlaySura: this.handlePlaySura,
 					resetPlayedSura: this.resetPlayedSura,
 					handleHeartClick: this.handleHeartClick,

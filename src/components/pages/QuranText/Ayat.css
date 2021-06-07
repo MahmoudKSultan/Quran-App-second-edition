@@ -1,0 +1,31 @@
+.ayat {
+	padding-top: 83px;
+}
+
+.ayat span {
+	font-size: 22px;
+	line-height: 3rem;
+	word-spacing: 0.2rem;
+}
+.ayat .suraTitle {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.suraInfo {
+	border: 10px double green;
+	padding: 50px;
+}
+
+.ayaAnc {
+	transition: 0.2s;
+}
+.ayaAnc:hover {
+	color: lightseagreen;
+}
+
+@media (max-width: 576px) {
+	.ayat .suraBody {
+		padding: 15px;
+	}
+}
