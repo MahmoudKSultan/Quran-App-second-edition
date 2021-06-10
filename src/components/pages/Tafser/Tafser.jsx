@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Loader from "../../Loader/Loader";
 import "./Tafser.css";
+import useTafserHook from "./useTafserHooks";
 function Tafser({
 	match: {
 		params: { id, suraNumber },
@@ -8,29 +9,9 @@ function Tafser({
 }) {
 	// id is for ayah
 
-	const [tafser, setTafser] = useState({});
-	const [ayah, setAyah] = useState({});
-	const [loader, setLoader] = useState(true);
-	useEffect(() => {
-		fetch(`http://api.quran-tafseer.com/tafseer/1/${suraNumber}/${id}`)
-			.then((res) => res.json())
-			.then((data) => {
-				setTafser(data);
-			});
-	}, []);
-
-	useEffect(() => {
-		tafser.ayah_url &&
-			fetch(`http://api.quran-tafseer.com/${tafser.ayah_url}`)
-				.then((res) => res.json())
-				.then((data) => {
-					setAyah(data);
-					setLoader(false);
-				});
-	}, [tafser]);
-
 	console.log(tafser);
 	console.log(ayah);
+	const { tafser, ayah, loader } = useTafserHook(id, suraNumber);
 	return (
 		<div className="tafser">
 			{loader ? (

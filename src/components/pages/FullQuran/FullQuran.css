@@ -1,0 +1,15 @@
+.fullquran {
+	padding-top: 90px;
+}
+
+.book {
+}
+
+.fullquran .suraBox,
+.fullquran .tafserbox {
+	flex: 1;
+	border: 10px double lightgreen;
+	height: 70vh;
+	padding: 20px;
+	overflow-y: scroll;
+}

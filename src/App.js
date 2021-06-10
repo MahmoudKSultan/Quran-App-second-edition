@@ -9,6 +9,7 @@ import Zekr from "./components/pages/Huson/Zekr";
 import Quran from "./components/pages/QuranText/Quran";
 import Ayat from "./components/pages/QuranText/Ayat";
 import Tafser from "./components/pages/Tafser/Tafser";
+import FullQuran from "./components/pages/FullQuran/FullQuran";
 function App() {
 	return (
 		<div className="App">
@@ -22,6 +23,7 @@ function App() {
 				<Route path="/qurantext" component={Quran} exact />
 				<Route path="/qurantext/:suraname/:id" component={Ayat} />
 				<Route path="/tafser/:suraNumber/:id" component={Tafser} exact />
+				<Route path="/fullquran" component={FullQuran} exact />
 			</Switch>
 		</div>
 	);

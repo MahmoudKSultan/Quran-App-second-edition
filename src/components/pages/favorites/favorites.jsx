@@ -28,14 +28,6 @@ function Favorites({ history }) {
 																	resetPlayedSura={value.resetPlayedSura}
 																/>
 															</div>
-															{/* <div className="suras">
-																<FavoritesBody
-																	title={"السور  المفضلين"}
-																	favReaders={value.favReaders}
-																	handleDeleteClick={value.handleDeleteClick}
-																	history={history}
-																/>
-															</div> */}
 														</React.Fragment>
 													);
 												}}
